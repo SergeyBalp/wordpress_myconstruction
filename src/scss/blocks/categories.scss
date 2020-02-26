@@ -1,0 +1,36 @@
+.pagination {
+
+    ul.page-numbers {
+        display: flex;
+        list-style: none;
+
+        a,
+        span {
+            color: darken($first, 15%);
+            transition: all .5s;
+            padding: .5rem 1rem;
+            position: relative;
+            display: block;
+            margin-left: -1px;
+            line-height: 1.25;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+        }
+
+        .current {
+            background-color: darken($first, 15%);
+            border-color: darken($first, 15%);
+            color: #fff;
+        }
+
+        a {
+            &:hover {
+                background-color: $first;
+                color: #fff;
+                border-color: $first;
+                text-decoration: none;
+            }
+        }
+    }
+
+}

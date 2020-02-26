@@ -1,0 +1,28 @@
+// Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
+
+
+// Подключение нужных SCSS исходников Bootstrap 4
+// @import "../../src/bower_components/bootstrap/scss/bootstrap.scss";
+
+// @import "../../src/bower_components/font-awesome/scss/fontawesome";
+// @import "../../src/bower_components/font-awesome/scss/solid";
+
+@import "variables";
+
+// Подключение своих SCSS файлов
+@import "blocks/preloader";
+@import "my";
+@import "fonts";
+@import "blocks/construction.scss";
+@import "blocks/header";
+@import "blocks/welcome";
+@import "blocks/mixins";
+@import "blocks/choose";
+@import "blocks/services";
+@import "blocks/gallery";
+@import "blocks/reviews";
+@import "blocks/contact";
+@import "blocks/footer";
+@import "blocks/copyright";
+@import "blocks/blog";
+@import "blocks/categories";

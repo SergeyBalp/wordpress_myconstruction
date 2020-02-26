@@ -1,0 +1,61 @@
+.section-services {
+
+    h2,
+    h5,
+    p {
+        color: $colorText;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+
+    }
+
+    h5.card-title {
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin: 20px 0;
+    }
+
+    p {
+        font-family: 'Roboto';
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.1em;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .card-body {
+        padding-top: 5px;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .btn-yellow {
+        margin: 0;
+        color: $white;
+
+        &:hover {
+            background-color: darken($first, 15%);
+        }
+    }
+}
+
+@media (max-width:480px) {
+
+    .section-services {
+        .btn-yellow {
+            margin: 10px auto;
+            width: 80%;
+        }
+    }
+}

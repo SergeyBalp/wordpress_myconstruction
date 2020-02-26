@@ -1,0 +1,142 @@
+.section-gallery {
+    // background: url('../images/Gallery_bg.png')center top no-repeat;
+    // background-size: cover;
+    padding-bottom: 100px;
+
+    h2,
+    p {
+        color: $white;
+    }
+
+    p {
+        font-family: 'Roboto';
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.3;
+        letter-spacing: 0.1em;
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-item {
+        margin-right: 10px;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        list-style: none;
+        outline: none;
+
+        &::after {
+            display: none;
+        }
+
+    }
+
+    .nav-link.active {
+        background-color: $black;
+        color: $white;
+        border-radius: 25px;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .info-tab {
+        font-size: 15px;
+        font-weight: 600;
+        padding: 5px 15px;
+        margin-right: 15px;
+        color: $white;
+
+        text-transform: uppercase;
+        transition: all .5s;
+
+        &:hover {
+            color: $black;
+            cursor: pointer;
+        }
+    }
+
+    .gallery-left {
+        margin: 0;
+        padding: 0 15px 10px 2px;
+        margin-bottom: 15px;
+    }
+
+    .gallery-right {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .tab-content {
+        box-sizing: border-box;
+    }
+
+}
+
+@media (max-width:1199px) {
+    .section-gallery {
+        .gallery-left {
+            padding-left: 0;
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .section-gallery {
+
+        .gallery-left {
+            padding-right: 12px;
+        }
+
+        .gallery-right {
+            padding-left: 3px;
+        }
+    }
+
+}
+
+
+@media (max-width:767px) {
+    .section-gallery {
+
+        .gallery-left {
+            padding: 0;
+        }
+
+        .gallery-right {
+            margin-top: 10px;
+            padding-left: 0;
+        }
+    }
+}
+
+@media (max-width:575px) {
+
+    .section-gallery {
+
+        .gallery-left {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .gallery-right {
+            margin-top: 0;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    }
+}

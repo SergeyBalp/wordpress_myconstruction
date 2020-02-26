@@ -1,0 +1,100 @@
+.main-header {
+    border-top: 5px solid $first;
+    background-color: $bgHeader;
+
+    .nav-link {
+        color: $white;
+        font-size: 14px;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $first;
+            transform: scale(0);
+            transition: all .5s;
+        }
+
+        &:hover {
+            color: $first;
+            transition: all .5s;
+
+            &::after {
+                transform: scale(1);
+            }
+        }
+    }
+
+    .navbar-brand {
+        color: $white;
+        font-size: 14px;
+        display: flex;
+
+        .header-logo {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .header-text {
+            display: inline-block;
+        }
+
+
+        &:hover {
+            color: $white;
+        }
+
+        span {
+            font-size: 24px;
+            font-weight: 700;
+            font-style: italic;
+            color: $first;
+            text-transform: uppercase;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        color: $white;
+
+        &:hover {
+            color: $first;
+        }
+    }
+
+    .navbar-expand-lg {
+        .navbar-nav {
+            a {
+                display: block;
+                padding: .5rem 1rem;
+                text-decoration: none;
+                color: $white;
+                font-size: 14px;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    background-color: $first;
+                    transform: scale(0);
+                    transition: all .5s;
+                }
+
+                &:hover {
+                    color: $first;
+                    transition: all .5s;
+
+                    &::after {
+                        transform: scale(1);
+                    }
+                }
+
+            }
+        }
+    }
+}
