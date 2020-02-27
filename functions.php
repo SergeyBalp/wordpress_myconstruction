@@ -46,6 +46,7 @@ if ( ! function_exists( 'myconstruction_setup' ) ) :
 		register_nav_menus( array(
 			'header_menu' => esc_html__( 'Header Menu', 'myconstruction' ),
 			'footer_menu' => esc_html__( 'Footer Menu', 'myconstruction' ),
+			'social_links_menu' => esc_html__( 'Social Links Menu', 'myconstruction' ),
 		) );
 
 		/*
@@ -255,8 +256,7 @@ function myconstruction_customize_register( $wp_customize ) {
 			 'label'    => 'Фон футера',
 			 'section'  => 'footer_options',
 			 'settings' => 'footer_bg',
-			 
-			 
+			 			 
 			 ) )
 	 );
 

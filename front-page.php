@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="col-md-12  text-center">
                     <h2><?php echo $cat_choose-> name; ?></h2>
-                    <p><?php echo $cat_choose -> category_description;?></p>
+                    <p class="pr-5 pl-5"><?php echo $cat_choose -> category_description;?></p>
                     <div class="row">
                         <?php
                         if($query->have_posts(  )):  while($query->have_posts(  )): $query->the_post(  ); ?>

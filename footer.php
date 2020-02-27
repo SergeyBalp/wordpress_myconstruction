@@ -17,33 +17,32 @@
                     <ul class="nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <img src="<?php bloginfo('template_url'); ?>/dist/images/Facebook.png" alt="">
+                            <span class="social-link"><i class="fab fa-facebook-f fa-2x"></i></span>
+                             </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                            <span class="social-link"><i class="fab fa-twitter fa-2x"></i></span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <img class="social-link" src="<?php bloginfo('template_url'); ?>/dist/images/Twitter.png" alt="">
+                            <span class="social-link"><i class="fab fa-youtube fa-2x"></i></span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <img class="social-link" src="<?php bloginfo('template_url'); ?>/dist/images/Youtube.png" alt="">
+                            <span class="social-link"><i class="fab fa-google-plus-g fa-2x"></i></span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <img class="social-link" src="<?php bloginfo('template_url'); ?>/dist/images/Google.png" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <img class="social-link" src="<?php bloginfo('template_url'); ?>/dist/images/in.png" alt="">
+                            <span class="social-link"><i class="fab fa-linkedin-in fa-2x"></i></span>
                             </a>
                         </li>
                     </ul>
                     </p>
-
-                    <p class="copyright">Copyright &copy; <?php the_time( 'Y'); ?> | Designed by <span>PSDFreebies.com</span> </p>
+                    <p class="copyright">Copyright &copy; <?php the_time( 'Y'); ?> | Designed by <span class= "name" >PSDFreebies.com</span> </p>
                 </div>
             </div>
         </div>

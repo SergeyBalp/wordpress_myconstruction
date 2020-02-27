@@ -5,7 +5,7 @@
     font-size: 15px;
     color: $white;
 
-    span {
+    .name {
         color: $first;
     }
 
@@ -14,13 +14,20 @@
         display: flex;
         justify-content: center;
 
-
     }
+
+    span {
+        color: $black;
+    }
+
+    // .fa {
+    //     font-weight: 900;
+    // }
 
 
     .nav-item {
-        width: 44px;
-        height: 44px;
+        width: 48px;
+        height: 48px;
         background-color: $first;
         border-radius: 50%;
         margin-right: 25px;
