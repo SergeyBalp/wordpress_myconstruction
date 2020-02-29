@@ -1,6 +1,6 @@
 .section-copyright {
     background-color: $bgCopyright;
-    padding-top: 25px;
+    padding-top: 0;
     padding-bottom: 30px;
     font-size: 15px;
     color: $white;
@@ -14,26 +14,30 @@
         display: flex;
         justify-content: center;
 
+
     }
-
-    span {
-        color: $black;
-    }
-
-    // .fa {
-    //     font-weight: 900;
-    // }
-
 
     .nav-item {
-        width: 48px;
-        height: 48px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
         background-color: $first;
-        border-radius: 50%;
+        border-radius: 100%;
         margin-right: 25px;
-        margin-bottom: 20px;
         position: relative;
         transition: all, .8s;
+
+        i {
+            color: $black;
+            transition: all, .8s;
+
+            &:hover {
+                color: $white;
+            }
+        }
 
         &:last-child {
             margin-right: 0;
@@ -42,28 +46,19 @@
         &:hover {
             background-color: darken($first, 15%);
         }
-    }
 
-    .nav-link {
-        text-decoration: none;
-        list-style: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        position: relative;
+        .nav-link {
+            text-decoration: none;
 
-        &:after {
-            display: none;
+            &::after {
+                display: none;
+            }
         }
 
-        .social-link {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+
     }
+
+
 
 
 
