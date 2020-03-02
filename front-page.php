@@ -116,7 +116,7 @@
                 <div class="col-md-12 text-center">
                     <h2><?php echo $cat_gallery-> name; ?></h2>
                     <p class="pr-5 pl-5"><?php echo $cat_gallery -> category_description;?></p>
-                    <ul class="nav nav-pills tab-content mb-5" id="myTab" role="tablist">
+                    <ul class="nav nav-pills tab-content mb-4" id="myTab" role="tablist">
                         <?php
                             $data=[];
                             $i=0;
@@ -135,7 +135,7 @@
                         <div class="col-md-6 gallery-left">
                                 <img class="img-fluid" src="<?php the_field('section_add_img', $cat_gallery);?>" alt="">
                         </div>
-                        <div class="col-md-6 gallery-right">
+                        <div class="col-md-6 gallery-right order-first order-md-last">
                             <div class="tab-content" id="myTabContent">
                                 <?php foreach($data as $k => $item): ?>
                                 <div class="tab-pane fade  <?php if(!$k) echo 'show active';?>" id="<?php echo $item['post_name']; ?>" role="tabpanel"

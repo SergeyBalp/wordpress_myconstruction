@@ -1,7 +1,7 @@
 .section-copyright {
     background-color: $bgCopyright;
     padding-top: 0;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     font-size: 15px;
     color: $white;
 
@@ -10,10 +10,10 @@
     }
 
     .nav {
+        padding-top: 10px;
         margin: 0;
         display: flex;
         justify-content: center;
-
 
     }
 
@@ -22,13 +22,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 32px;
-        height: 32px;
+        width: 40px;
+        height: 40px;
         background-color: $first;
         border-radius: 100%;
         margin-right: 25px;
         position: relative;
-        transition: all, .8s;
+        transition: all .8s;
 
         i {
             color: $black;
@@ -54,7 +54,6 @@
                 display: none;
             }
         }
-
 
     }
 

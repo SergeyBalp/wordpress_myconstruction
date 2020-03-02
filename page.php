@@ -7,7 +7,7 @@
                     <?php if(have_posts(  )): while(have_posts(  )) : the_post(  );  ?>
                         <article class="article-preview">
                             <h2><?php the_title( ); ?></h2>
-                            <p><span class="article-date"><i class="far fa-calendar-alt"></i> <?php the_time('d.m.Y'); ?></span></p>
+                            
                             <div class="article-excerpt">
 
                                 <?php if(has_post_thumbnail( )):?>

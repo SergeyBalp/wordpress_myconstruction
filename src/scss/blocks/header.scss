@@ -45,7 +45,7 @@
             color: $white;
         }
 
-        span {
+        .header-name {
             font-size: 24px;
             font-weight: 700;
             font-style: italic;
@@ -97,4 +97,39 @@
             }
         }
     }
+}
+
+@media (max-width:991px) {
+
+    .main-header {
+        .navbar-expand-lg {
+            .navbar-nav {
+                a {
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+
+            }
+        }
+
+    }
+}
+
+@media (max-width:575px) {
+    .main-header {
+        .navbar-brand {
+            .header-name {
+                font-size: 20px;
+            }
+
+            .header-descr {
+                display: none;
+            }
+
+            .header-logo {
+                display: none;
+            }
+        }
+    }
+
 }

@@ -15,20 +15,18 @@
             <span class="sr-only">Loading...</span>
         </div>
     </div> -->
-   
 
     <div class=" scrollToTop" ><span class= "d-flex justify-content-center align-items-center"><i class="fas fa-angle-up"></i></span></div>
     <header class="main-header">
         <div class="col-md-10 offset-md-1">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="<?php home_url('/');?>">
-                    <!-- <span>Construction</span> <br>You Company Togline Here -->
-                    <?php $custom_logo = wp_get_attachment_image_src( get_theme_mod('custom_logo') ); if($custom_logo): ?>
+                     <?php $custom_logo = wp_get_attachment_image_src( get_theme_mod('custom_logo') ); if($custom_logo): ?>
                      <div class="header-logo"> <img src="<?php echo $custom_logo[0] ?>" alt="<?php bloginfo('name'); ?>">
                     </div> 
                             <?php endif; ?>
-                    <div class="header-text" ><span> <?php bloginfo('name'); ?></span><br>
-                        <?php bloginfo('description'); ?>
+                    <div class="header-text" ><span class="header-name"> <?php bloginfo('name'); ?></span><br>
+                       <span class= "header-descr"> <?php bloginfo('description'); ?></span>
                     </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -37,17 +35,16 @@
                     <span><i class="fas fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <?php wp_nav_menu( array(
-                    'theme_location'  => 'header_menu',
-                    'container'       => false, 
-                    'menu_class'      => 'navbar-nav ml-auto', 
-                    ) );?>
+                    <?php wp_nav_menu( array(
+                        'theme_location'  => 'header_menu',
+                        'container'       => false, 
+                        'menu_class'      => 'navbar-nav ml-auto', 
+                        ) );?>
                 </div>
             </nav>
         </div>
     </header>
         <?php  if(is_front_page(  )):?>
-    <!-- <section class="section-construction" <?php echo myconstruction_get_background('header_bg'); ?>> -->
     <section class="section-construction" style="background: url( <?php echo get_custom_header(  )-> url ; ?>) center no-repeat; background-size:cover;" >
         <?php endif;?>   
         <div class="container">
