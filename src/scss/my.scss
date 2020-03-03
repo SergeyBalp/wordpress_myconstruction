@@ -4,7 +4,6 @@ body {
     color: $white;
 }
 
-
 img {
     max-width: 100%;
     // height: auto;
@@ -12,6 +11,13 @@ img {
 
 section {
     padding: 60px 0;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 
@@ -88,4 +94,11 @@ section {
 .error-404,
 .search {
     color: $black;
+}
+
+@media (max-width:991px) {
+
+    section {
+        padding: 40px 0;
+    }
 }

@@ -51,10 +51,10 @@
             <div class="row">
                 <div class="col-md-10 offset-md-1 text-center">
                     <div class="text-construction">
-                        <h2 class="text-center"><?php the_field('header1');?></h2>
-                        <h3 class="text-center"><?php the_field('header2');?>
+                        <h1 class="text-center"><?php the_field('header1');?></h1>
+                        <h2 class="text-center"><?php the_field('header2');?>
                         <br>
-                        <span><?php the_field('header3');?></span></h3>
+                        <span><?php the_field('header3');?></span></h2>
                             <?php if(get_field('header_text')): ?>
                         <p class="text-center"><?php the_field('header_text');?></p>
                             <?php endif; ?>

@@ -7,11 +7,7 @@
     }
 
     h2 {
-        font-weight: 700;
-        font-size: 30px;
-        text-transform: uppercase;
         margin-bottom: 50px;
-
     }
 
     h5.card-title {
@@ -27,25 +23,47 @@
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.1em;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .card {
         border: none;
+        height: 100%;
+
+        .card-body {
+            padding-top: 5px;
+            padding-left: 0;
+            text-align: left;
+        }
+
+        .card-footer {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+
+            a.btn-yellow {
+                display: block;
+                margin: 0;
+                color: $white;
+
+                &:hover {
+                    background-color: darken($first, 15%);
+                }
+            }
+        }
     }
+}
 
-    .card-body {
-        padding-top: 5px;
-        padding-left: 0;
-        text-align: left;
-    }
+@media (max-width:767px) {
+    .section-services {
+        h2 {
+            margin-bottom: 20px;
+        }
 
-    .btn-yellow {
-        margin: 0;
-        color: $white;
-
-        &:hover {
-            background-color: darken($first, 15%);
+        .card {
+            .card-img-top {
+                margin-top: 30px;
+            }
         }
     }
 }

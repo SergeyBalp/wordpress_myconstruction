@@ -1,6 +1,4 @@
 .section-construction {
-    // background: url('../images/Background_cut.png')center top no-repeat;
-    // background-size: cover;
     background-color: #ccc;
     min-height: 600px;
     padding-bottom: 200px;
@@ -9,7 +7,7 @@
         margin-right: 0;
     }
 
-    h2 {
+    h1 {
         font-family: 'Poppins';
         font-size: 28px;
         font-weight: 400;
@@ -18,7 +16,7 @@
         color: $white;
     }
 
-    h3 {
+    h2 {
         color: $white;
         font-size: 60px;
         font-weight: 800;
@@ -45,12 +43,12 @@
     .section-construction {
         padding-bottom: 80px;
 
-        h2 {
+        h1 {
             font-size: 26px;
             padding-top: 60px;
         }
 
-        h3 {
+        h2 {
             font-size: 48px;
         }
     }
@@ -60,12 +58,12 @@
     .section-construction {
         padding-bottom: 0;
 
-        h2 {
+        h1 {
             font-size: 24px;
             padding-top: 40px;
         }
 
-        h3 {
+        h2 {
             font-size: 36px;
         }
     }
@@ -74,7 +72,7 @@
 @media (max-width:767px) {
 
     .section-construction {
-        h2 {
+        h1 {
             padding-top: 0px;
         }
     }
@@ -84,7 +82,11 @@
 @media (max-width:480px) {
 
     .section-construction {
-        h3 {
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
             font-size: 30px;
         }
 

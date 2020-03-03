@@ -2,12 +2,9 @@ $bgCopyright: #1a1c27;
 $bgFooter : #1D222E;
 
 .section-footer {
-    // background: url('../images/Footer_bg.png')center top no-repeat;
-    // background-size: cover;
     background-color: $bgFooter;
     padding-top: 70px;
     padding-bottom: 70px;
-    // color: $white;
 
     .nav {
         margin: 0;
@@ -127,7 +124,6 @@ $bgFooter : #1D222E;
 
     }
 
-
     .rpwe-summary {
         font-family: 'Roboto';
         padding: 0;
@@ -137,7 +133,6 @@ $bgFooter : #1D222E;
         line-height: 1.8;
         letter-spacing: 0.1em;
         transition: all .5s;
-
     }
 
     .rpwe-title {
@@ -164,7 +159,6 @@ $bgFooter : #1D222E;
             }
 
             display: flex;
-            // justify-content: space-between;
 
             a.nav-link {
                 padding: 0;
@@ -186,67 +180,7 @@ $bgFooter : #1D222E;
         }
     }
 
-
-
-
-
-
 }
-
-
-// .footer-post {
-
-//     .nav-link {
-//         padding: 0;
-
-//         &::after {
-//             display: none;
-//         }
-//     }
-
-//     .post-item {
-
-//         display: flex;
-//         margin-bottom: 20px;
-//         max-width: 255px;
-//         transition: all, .5s;
-
-//         .post-date {
-//             margin-right: 10px;
-//             min-width: 50px;
-//             min-height: 50px;
-//             border: 3px solid $white;
-//             border-radius: 50%;
-//             text-align: center;
-//             color: $white;
-//             display: flex;
-//             flex-wrap: wrap;
-//             justify-content: center;
-//             align-items: center;
-//             font-size: 12px;
-//             font-weight: 500;
-//             line-height: 1.1;
-//             text-transform: uppercase;
-//         }
-
-//         .post-title {
-//             padding-top: 10px;
-//             margin: 0;
-//             font-family: 'Roboto';
-//             padding: 0;
-//             color: $white;
-//             font-size: 12px;
-//             font-weight: 500;
-//             line-height: 1.8;
-//             letter-spacing: 0.1em;
-//             transition: all .5s;
-
-//             &:hover {
-//                 color: $first;
-//             }
-//         }
-//     }
-// }
 
 .footer-contact {
     padding-left: 30px;
@@ -280,10 +214,14 @@ $bgFooter : #1D222E;
             margin-right: 25px;
         }
     }
-
 }
 
 @media (max-width:991px) {
+    .section-footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
 
     .widget_nav_menu {
         margin-bottom: 50px;
@@ -292,15 +230,10 @@ $bgFooter : #1D222E;
     #text-6 {
         padding-left: 50px;
     }
-
-
-
-
 }
 
 @media (max-width:575px) {
     .section-footer {
         padding: 30px 20px;
     }
-
 }

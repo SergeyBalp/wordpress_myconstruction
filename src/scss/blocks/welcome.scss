@@ -10,9 +10,9 @@
 
 .welcome-left h2 {
     text-align: left;
+    color: $first;
     font-size: 34px;
     font-weight: 700;
-    color: $first;
     text-transform: uppercase;
     line-height: 1.1;
 }
@@ -37,21 +37,15 @@
 .welcome-right {
     padding-top: 0;
     position: relative;
-    // background: url('../images/Welcome_bg.png')center top no-repeat;
-    // padding-bottom: 40px;
 
     .welcome-employee {
         position: absolute;
-        // top: -60px;
         left: 50%;
         transform: translateX(-50%);
         height: 120%;
         bottom: 0;
     }
-
 }
-
-
 
 @media (max-width:1200px) {
     .welcome-right {
@@ -59,6 +53,17 @@
             height: 115%;
         }
     }
+}
+
+@media (max-width:767px) {
+    .welcome-left h2 {
+        font-size: 28px;
+    }
+
+    .welcome-left h3 {
+        font-size: 22px;
+    }
+
 }
 
 @media (max-width:480px) {

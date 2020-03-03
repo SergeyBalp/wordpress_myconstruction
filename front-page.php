@@ -42,7 +42,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12  text-center">
-                    <h2><?php echo $cat_choose-> name; ?></h2>
+                    <h2 class="section-title"><?php echo $cat_choose-> name; ?></h2>
                     <p class="pr-5 pl-5"><?php echo $cat_choose -> category_description;?></p>
                     <div class="row">
                         <?php
@@ -78,16 +78,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2><?php echo $cat_services-> name; ?></h2>
+                    <h2 class="section-title"><?php echo $cat_services-> name; ?></h2>
                     <div class="row">
                         <?php
                         if($query->have_posts(  )):  while($query->have_posts(  )): $query->the_post(  ); ?>
-                            <div class="col-md-4">
+                            <div class="col-md-4 card-deck ">
                                     <div class="card">
-                                        <img class="card-img-top" src="<?php  echo get_the_post_thumbnail_url( ); ?>" alt="Card image cap">
+                                            <img class="card-img-top" src="<?php  echo get_the_post_thumbnail_url( ); ?>" alt="Card image cap">
                                             <div class="card-body">
                                                 <h5 class="card-title"><?php the_title(); ?></h5>
-                                                <p><?php the_content(); ?></p>
+                                                <p class="card-text"><?php the_content(); ?></p>
+                                            </div>
+                                            <div class="card-footer">
                                                 <a href="<?php the_permalink( ); ?>" class="btn btn-yellow"><?php _e('know more', 'myconstruction'); ?></a>
                                             </div>
                                     </div>
@@ -114,7 +116,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2><?php echo $cat_gallery-> name; ?></h2>
+                    <h2 class="section-title"><?php echo $cat_gallery-> name; ?></h2>
                     <p class="pr-5 pl-5"><?php echo $cat_gallery -> category_description;?></p>
                     <ul class="nav nav-pills tab-content mb-4" id="myTab" role="tablist">
                         <?php
@@ -164,7 +166,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center reviews-block" >
-                    <h2><?php echo $cat_review-> name; ?></h2>
+                    <h2 class="section-title"><?php echo $cat_review-> name; ?></h2>
                     <p class="pr-5 pl-5"><?php echo $cat_review-> category_description; ?></p>
                     <div class="row review-row">
                     <?php $i = 0; foreach($posts as $post): ?>
@@ -195,7 +197,7 @@ if($page_contact):
     // myconstruction_debug( $page_contact);
 ?>
 
-    <section class="section-contact">
+    <section class="section-contact" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -204,25 +206,7 @@ if($page_contact):
                 </div>
                 <div class="col-md-6">
                      <div class="form">
-                        <!--<div class="form-row">
-                            <div class="form-group col-lg-6">
-                                <label for="inputName">Name</label>
-                                <input type="text" class="form-control" id="inputName" placeholder="Name">
-                            </div>
-                            <div class="form-group col-lg-6">
-                                <label for="inputEmail">Email</label>
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-xl-9">
-                                <label for="inputTextarea">Message</label>
-                                <input type="text" class="form-control" id="inputTextarea" placeholder="Message">
-                            </div>
-                            <div class="form-group col-xl-3">
-                                <button type="submit" class="btn btn-yellow">submit</button>
-                            </div>
-                        </div> -->
+
                         <?php echo do_shortcode('[contact-form-7 id="167" title="Контактная форма"]'); ?>
                     </div>
                 </div>
