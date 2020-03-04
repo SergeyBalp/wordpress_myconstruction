@@ -1,6 +1,6 @@
 .section-construction {
     background-color: #ccc;
-    min-height: 600px;
+    min-height: 500px;
     padding-bottom: 200px;
 
     .btn-second {
@@ -56,7 +56,7 @@
 
 @media (max-width:991px) {
     .section-construction {
-        padding-bottom: 0;
+        padding-bottom: 30px;
 
         h1 {
             font-size: 24px;
@@ -78,10 +78,18 @@
     }
 }
 
+@media (max-width:575px) {
+    .section-construction {}
+}
+
 
 @media (max-width:480px) {
 
     .section-construction {
+        p {
+            margin-bottom: 30px;
+        }
+
         h1 {
             font-size: 20px;
         }

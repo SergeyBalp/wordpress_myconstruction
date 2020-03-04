@@ -1061,7 +1061,7 @@ object {
 
 .comments-title,
 .comment-reply-title {
-	font-family: "Noto Serif", serif;
+	/* font-family: "Noto Serif", serif; */
 	font-size: 18px;
 	font-size: 1.8rem;
 	line-height: 1.3333;
@@ -1121,7 +1121,7 @@ object {
 .pingback .edit-link {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: "Noto Sans", sans-serif;
+	/* font-family: "Noto Sans", sans-serif; */
 	font-size: 12px;
 	font-size: 1.2rem;
 	line-height: 1.5;
@@ -1186,7 +1186,7 @@ object {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
 	display: inline-block;
-	font-family: "Noto Sans", sans-serif;
+	/* font-family: "Noto Sans", sans-serif; */
 	font-weight: 700;
 	line-height: 1;
 	margin-top: 2em;
@@ -1208,7 +1208,7 @@ object {
 .comment-form label {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: "Noto Sans", sans-serif;
+	/* font-family: "Noto Sans", sans-serif; */
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-weight: 700;
@@ -1223,7 +1223,7 @@ object {
 .comment-form input[type="url"],
 .comment-form input[type="submit"] {
 	width: 100%;
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	padding: 1rem 1.6rem;
 }
 
@@ -1233,15 +1233,32 @@ object {
 .form-allowed-tags {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: "Noto Sans", sans-serif;
+	/* font-family: "Noto Sans", sans-serif; */
 	font-size: 12px;
 	font-size: 1.2rem;
 	line-height: 1.5;
 	margin-bottom: 2em;
 }
 
+.logged-in-as a {
+	color: rgba(51, 51, 51, 0.8);
+	color: #C79800;
+	font-weight: 600;
+}
+
+.logged-in-as a:last-child {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.logged-in-as a:visited {
+	color: #C79800;
+}
+
 .logged-in-as a:hover {
-	border-bottom: 1px solid #333;
+	text-decoration: none;
+	color: #ffcb0f;
+	border-bottom: 1px solid #C79800;
 }
 
 .no-comments {
@@ -1249,7 +1266,7 @@ object {
 	border-top: 1px solid rgba(51, 51, 51, 0.1);
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
-	font-family: "Noto Sans", sans-serif;
+	/* font-family: "Noto Sans", sans-serif; */
 	font-weight: 700;
 	padding-top: 1.6em;
 }
