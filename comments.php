@@ -2,12 +2,12 @@
 /**
  * The template for displaying comments
  *
- * This is the template that displays the area of the page that contains both the current comments
+ * The area of the page that contains both current comments
  * and the comment form.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package construction
+ * @package WordPress
+ * @subpackage Twenty_Fifteen
+ * @since Twenty Fifteen 1.0
  */
 
 /*
@@ -16,60 +16,59 @@
  * return early without loading the comments.
  */
 if ( post_password_required() ) {
-	return;
+    return;
 }
 ?>
 
 <div id="comments" class="comments-area">
 
-	<?php
-	// You can start editing here -- including this comment!
-	if ( have_comments() ) :
-		?>
-		<h2 class="comments-title">
-			<?php
-			$construction_comment_count = get_comments_number();
-			if ( '1' === $construction_comment_count ) {
-				printf(
-					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'construction' ),
-					'<span>' . get_the_title() . '</span>'
-				);
-			} else {
-				printf( // WPCS: XSS OK.
-					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $construction_comment_count, 'comments title', 'construction' ) ),
-					number_format_i18n( $construction_comment_count ),
-					'<span>' . get_the_title() . '</span>'
-				);
-			}
-			?>
-		</h2><!-- .comments-title -->
+    <?php if ( have_comments() ) : ?>
+        <h2 class="comments-title">
+            <?php
+            $comments_number = get_comments_number();
+            if ( '1' === $comments_number ) {
+                /* translators: %s: post title */
+                printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'myconstruction' ), get_the_title() );
+            } else {
+                printf(
+                /* translators: 1: number of comments, 2: post title */
+                    _nx(
+                        '%1$s thought on &ldquo;%2$s&rdquo;',
+                        '%1$s thoughts on &ldquo;%2$s&rdquo;',
+                        $comments_number,
+                        'comments title',
+                        'myconstruction'
+                    ),
+                    number_format_i18n( $comments_number ),
+                    get_the_title()
+                );
+            }
+            ?>
+        </h2>
 
-		<?php the_comments_navigation(); ?>
+        <?php myconstruction_comment_nav(); ?>
 
-		<ol class="comment-list">
-			<?php
-			wp_list_comments( array(
-				'style'      => 'ol',
-				'short_ping' => true,
-			) );
-			?>
-		</ol><!-- .comment-list -->
+        <ol class="comment-list">
+            <?php
+            wp_list_comments( array(
+                'style'       => 'ol',
+                'short_ping'  => true,
+                'avatar_size' => 56,
+            ) );
+            ?>
+        </ol><!-- .comment-list -->
 
-		<?php
-		the_comments_navigation();
+        <?php myconstruction_comment_nav(); ?>
 
-		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() ) :
-			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'construction' ); ?></p>
-			<?php
-		endif;
+    <?php endif; // have_comments() ?>
 
-	endif; // Check for have_comments().
+    <?php
+    // If comments are closed and there are comments, let's leave a little note, shall we?
+    if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
+        ?>
+        <p class="no-comments"><?php _e( 'Comments are closed.', 'myconstruction' ); ?></p>
+    <?php endif; ?>
 
-	comment_form();
-	?>
+    <?php comment_form(); ?>
 
-</div><!-- #comments -->
+</div><!-- .comments-area -->
