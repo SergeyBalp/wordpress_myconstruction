@@ -137,7 +137,7 @@
                         <div class="col-md-6 gallery-left">
                                 <img class="img-fluid" src="<?php the_field('section_add_img', $cat_gallery);?>" alt="">
                         </div>
-                        <div class="col-md-6 gallery-right order-first order-md-last">
+                        <div class="col-md-6 gallery-right">
                             <div class="tab-content" id="myTabContent">
                                 <?php foreach($data as $k => $item): ?>
                                 <div class="tab-pane fade  <?php if(!$k) echo 'show active';?>" id="<?php echo $item['post_name']; ?>" role="tabpanel"
