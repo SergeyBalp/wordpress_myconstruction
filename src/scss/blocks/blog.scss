@@ -180,8 +180,19 @@
 
 @media (max-width:480px) {
     .thumb {
-        // padding: 20px auto;
         width: 100%;
         float: none;
+    }
+}
+
+@media (max-width:350px) {
+    .widget-categories {
+        ul {
+            li {
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
     }
 }

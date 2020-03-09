@@ -1227,6 +1227,12 @@ object {
 	padding: 1rem 1.6rem;
 }
 
+.comment-form .form-submit input[type="submit"] {
+	font-size: 1.1rem;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 .comment-notes,
 .comment-awaiting-moderation,
 .logged-in-as,
@@ -1317,4 +1323,10 @@ object {
 	font-weight: normal;
 	letter-spacing: 0;
 	text-transform: none;
+}
+
+@media (max-width:767px) {
+	.comment-form .form-submit input[type="submit"] {
+		font-size: 1rem;
+	}
 }

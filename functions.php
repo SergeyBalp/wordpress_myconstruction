@@ -288,7 +288,7 @@ function myconstruction_navigation_template( $template, $class ){
 
 function exclude_category($query) {
 	if ($query->is_home){
-	$query->set('category__not_in',array(1,8));
+	$query->set('category__not_in',array(1,6,8));
 	} 
 	return $query;
 }
