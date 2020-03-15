@@ -1,9 +1,13 @@
 .section-copyright {
     background-color: $bgCopyright;
-    padding-top: 0;
+    padding-top: 15px;
     padding-bottom: 10px;
     font-size: 15px;
     color: $white;
+
+    &__social {
+        margin-bottom: 15px;
+    }
 
     .name {
         color: $first;
@@ -54,11 +58,5 @@
                 display: none;
             }
         }
-
     }
-
-
-
-
-
 }

@@ -62,12 +62,12 @@
                                 <?php if(get_field('header_btn1')):
                                     $link = get_field('header_btn1');
                                 ?> 
-                            <a href="<?php echo esc_url( $link['url'] ); ?>"> <button class="btn btn-yellow" type="button"><?php echo esc_html( $link['title'] ); ?></button></a>
+                            <a href="<?php echo esc_url( $link['url'] ); ?>" class="btn btn-yellow"><?php echo esc_html( $link['title'] ); ?></a>
                                 <?php endif; ?> 
                                 <?php if(get_field('header_btn2')):
                                     $link = get_field('header_btn2');
                                 ?>  
-                            <a href="<?php echo esc_url( $link['url'] ); ?>"> <button class="btn btn-yellow btn-second" type="button"><?php echo esc_html( $link['title'] ); ?></button></a>
+                            <a href="<?php echo esc_url( $link['url'] ); ?>" class="btn btn-yellow btn-second"><?php echo esc_html( $link['title'] ); ?></a>
                             <?php endif; ?> 
                         </div>
                     </div>

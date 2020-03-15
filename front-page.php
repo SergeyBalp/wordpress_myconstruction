@@ -169,7 +169,7 @@
                     <h2 class="section-title"><?php echo $cat_review-> name; ?></h2>
                     <p class="pr-5 pl-5"><?php echo $cat_review-> category_description; ?></p>
                     <div class="row review-row">
-                    <?php $i = 0; foreach($posts as $post): ?>
+                        <?php $i = 0; foreach($posts as $post): ?>
                         <div class="col-md-4 pl-4 pr-4">
                             <blockquote class="blockquote">
                                 <div class="review-text text-left <?php if(!$i) echo 'firster';?>">
@@ -208,9 +208,10 @@ if($page_contact):
                      <div class="form">
 
                         <?php echo do_shortcode('[contact-form-7 id="167" title="Контактная форма"]'); ?>
-                    </div>
+                     </div>
                 </div>
             </div>
+        </div>    
     </section>
 <?php endif;?>
 

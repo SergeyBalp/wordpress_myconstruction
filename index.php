@@ -23,7 +23,7 @@
                                     <p><a class="more" href="<?php the_permalink( ); ?>"><?php _e('Read more', 'myconstruction'); ?></a></p>
                             </div>
                                 <div class="clearfix"></div>
-                         </article>
+                        </article>
 
                     <?php endwhile; ?>
 
@@ -44,6 +44,6 @@
             </div>
         </div>
         
-    </section>
+</section>
 
 <?php get_footer( ); ?>

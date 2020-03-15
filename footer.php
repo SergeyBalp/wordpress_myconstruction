@@ -13,35 +13,35 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <p>
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                            <i class="fab fa-facebook-f "></i>
-                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                           <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                            <i class="fab fa-youtube "></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                            <i class="fab fa-google-plus-g "></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    </p>
+                    <div class="section-copyright__social">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                <i class="fab fa-facebook-f "></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                            <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                <i class="fab fa-youtube "></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                <i class="fab fa-google-plus-g "></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <p class="copyright">Copyright &copy; <?php the_time( 'Y'); ?> | Designed by <span class= "name" >PSDFreebies.com</span> </p>
                 </div>
             </div>
